@@ -1,4 +1,5 @@
 .todo{
+      position: relative;
       width: 700px;
       height: auto;
       margin: 100px auto;
@@ -10,16 +11,71 @@
 .title{
       text-align: center;
       color: var(--white);
+      user-select: none;
+      padding-bottom: 5px;
 }
 .button{
       width: 100px;
       margin-left: auto;
 }
 .button button{
-      padding: 10px 18px;
+      padding: 8% 18px;
       color: var(--primary)
 }
 button{
-      font-weight: bold ;
+      /* margin-top: 9px; */
+      font-weight: bold;
       font-size: 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 0.5s ease;
+}
+button:active{
+      transform: translateY(-10px);
+}
+.input{
+      position: absolute;
+      display: block;
+      top: 80px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      border: none;
+      width: 78%;
+      margin-top: -10px;
+      outline-color: var(--primary);
+      font-weight: 500 ;
+
+}
+.card{
+      margin-top: 20px;
+}
+.cardItem{
+      width: 100%;
+      padding: 20px;
+      color: var(--white);
+      border: 1px solid var(--border);
+      margin-top: 10px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.cardItem p {
+      cursor: pointer;
+      font-size: 18px;
+      text-transform: capitalize;
+      user-select: none;
+}
+.delBtn button{
+      margin-top: 0;
+      padding: 5px 10px;
+      font-size: 17px;
+      text-transform: capitalize;
+      background-color: var(--red);
+      color: var(--white);
+      font-weight: bold;
+      border: none;
+      letter-spacing: 1px;
+      cursor: pointer;
 }

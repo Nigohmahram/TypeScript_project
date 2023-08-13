@@ -12,10 +12,8 @@ body{
 :root{
   --font-family: 'Roboto', sans-serif;
   --primary: rgb(23,23,65);
-  --border: rgb(197,197,197);;
+  --border: rgb(197,197,197);
   --black: #000;
   --white: #fff;
-}
-.title{
-  text-align: center;
+  --red:  rgb(243,94,94);
 }
